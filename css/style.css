@@ -2,31 +2,37 @@
 body {
   font-family: Helvetica, Meiryo;
   color: #333;
-  background-color: #f6f6f6;
+  background-color: #4285f4;
 }
 .personal-color {
-  background-color: #4285f4;
-  height: 8px;
+  background-color: #f6f6f6;
+  margin-left: 80px;
+  margin-right: 80px;;
 }
 .img-area {
   text-align:center;
   margin-bottom: 32px;
 }
 .description-area {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 128px;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-bottom: 128px;
 }
 .face, .content {
   width: 50%;
 }
 .title {
-  border-left: 4px solid #4285f4;
   font-size: 32px;
-  padding: 16px 0 16px 8px;
+  padding: 16px 0;
   vertical-align: middle;
 }
 p {
   font-size: 17px;
   padding: 16px 0;
+  line-height: 32px;
+}
+iframe {
+  width: 50%;
+  height: 309px;
+}
 }
