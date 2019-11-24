@@ -45,8 +45,16 @@ p {
   padding: 16px 0;
   line-height: 32px;
 }
+.back{
+  width: 0px;
+  height: 200px;
+  margin: auto;
+}
+.back a {
+  color: #ccc;
+  font-size: 40px;
+}
 iframe {
   width: 50%;
   height: 309px;
-}
 }
