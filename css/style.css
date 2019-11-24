@@ -2,9 +2,23 @@
 body {
   font-family: Helvetica, Meiryo;
   color: #333;
+}
+.personal-color.momo {
+  background-color: #FFB200;
+}
+.personal-color.hoshi {
   background-color: #4285f4;
 }
-.personal-color {
+.personal-color.keiko {
+  background-color: #8443D0;
+}
+.personal-color.kurihara {
+  background-color: #71F371;
+}
+.personal-color.yoshiyama {
+  background-color: #F2FC03;
+}
+.contents-area {
   background-color: #f6f6f6;
   margin-left: 80px;
   margin-right: 80px;;
