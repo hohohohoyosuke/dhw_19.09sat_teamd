@@ -45,6 +45,9 @@ p {
   padding: 16px 0;
   line-height: 32px;
 }
+.linethrough{
+  text-decoration: line-through;
+}
 .back{
   width: 0px;
   height: 200px;

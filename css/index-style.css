@@ -136,9 +136,33 @@ img {
   max-width: 100%;
 }
 
+header {
+  background-image: url(../img/mv.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+}
+
+header p {
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
 /* main */
 main {
-  width: 1360px;
+  width: 1200px; /* 全体横幅変更 */
   margin: 0 auto;
 }
 
@@ -161,13 +185,31 @@ main {
 }
 
 .message_ttl {
-  font-size: 85px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.message_area {
+  display: flex;
+  margin-top: 164px;
 }
 
 .message_txt {
-  font-size: 30px;
-  margin-top: 164px;
+  font-size: 16px;
   text-align: left;
+  width: 70%;
+  line-height: 4;
+}
+
+.message_img {
+  width: 960px;
+  margin-left: 80px;
+}
+
+.message_img img {
+  width: 100%;
+  /* height: 900px; */
+  object-fit: cover;
 }
 
 .member {
@@ -185,7 +227,7 @@ main {
 
 .member_list {
   display: block;
-  width: 260px;
+  width: 232px;
   margin-right: 16px;
   backface-visibility: hidden;
 }
@@ -232,7 +274,7 @@ main {
 .member_list_parsonal .txt:last-child {
   margin-top: 0;
 }
-
+/* 人物画像 */
 .member_list .parsonal_01 {
   background: url(../img/parsonal_01.png);
 }
@@ -266,7 +308,7 @@ main {
 .member_list_comment_txt {
   margin-top: 10px;
 }
-
+/* hover設定 名前*/
 .member_list:hover .name_01 {
   border: #FFB200 solid 1px;
   color: #FFB200;
@@ -291,7 +333,7 @@ main {
   border: #71F371 solid 1px;
   color: #71F371;
 }
-
+/* hover設定 コメント部分*/
 .member_list:hover .comment_01 {
   background-color: #FFB200;
 }
@@ -392,7 +434,7 @@ footer a:hover {
 
 footer .footerarea {
   display: flex;
-  width: 1360px;
+  width: 1200px;/* footer横幅変更 */
   margin: 0 auto;
 }
 
@@ -445,13 +487,13 @@ footer .sns_list:last-child {
 }
 
 footer .sns_list img {
-  width: 56px;
+  width: 28px;
 }
 
 footer .copy {
-  width: 1360px;
+  width: 1200px;/* footer横幅変更 */
   margin: 60px auto 0;
-  font-size: 20px;
+  font-size: 16px;
   text-align: right;
 }
 
