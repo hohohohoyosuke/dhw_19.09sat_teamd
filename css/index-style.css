@@ -302,7 +302,7 @@ main {
   margin-top: 7px;
   padding: 16px 20px;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   transition: background-color .5s ease;
 }
 .member_list_comment:hover, .member_list:hover .member_list_comment {
