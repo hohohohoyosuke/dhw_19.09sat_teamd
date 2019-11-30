@@ -146,13 +146,14 @@ header {
 }
 
 header h1 {
-  color: #fff;
-  font-size: 60px;
+  color: #f8f8f8;
+  font-size: 72px;
+  line-height: 176px;
   text-align: center;
 }
 
 header p {
-  color: #fff;
+  color: #f8f8f8;
   text-align: center;
   margin-top: 40px;
   font-size: 20px;
