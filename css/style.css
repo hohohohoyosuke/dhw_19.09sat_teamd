@@ -61,3 +61,18 @@ iframe {
   width: 50%;
   height: 309px;
 }
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #7f7f7f;
+}
+a:visited {
+  color: #aaa;
+}
+a:hover {
+  color: #555;
+}
+a:active {
+  color: #333;
+}
