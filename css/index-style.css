@@ -180,7 +180,7 @@ main {
 }
 
 .message {
-  margin-top: 304px;
+  margin-top: 104px;/*304pxから変更*/
   text-align: center;
 }
 
@@ -191,7 +191,7 @@ main {
 
 .message_area {
   display: flex;
-  margin-top: 164px;
+  margin-top: 50px;/*164pxから変更*/
 }
 
 .message_txt {
@@ -501,4 +501,14 @@ footer .copy {
   footer .copy {
     width: 100%;
   }
+}
+/* scroll fadein */
+.fadein {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition:all 1s;
+}
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
 }

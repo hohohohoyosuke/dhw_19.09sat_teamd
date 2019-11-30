@@ -14,8 +14,8 @@
    </header>
    <main>
       <div id="message" class="message">
-         <h2 class="message_ttl">Our Stories</h2>
-         <div class="message_area">
+         <h2 class="message_ttl fadein">Our Stories</h2>
+         <div class="message_area fadein">
             <div class="message_txt">
                私たちは同じことを学んでいても、全く向いている方向は違う。<br>
                違う人生、思いを持っている。<br>
@@ -24,14 +24,14 @@
                デジハリで学び、みんなの「Diversity」が花開く未来にワクワクする。<br>
                今後どんなものが生まれていくんだろう。これからが本番だ。
             </div>
-            <div class="message_img"><img src="img/our-stories.jpg" alt="Our Stories"></div>
+            <div class="message_img fadein"><img src="img/our-stories.jpg" alt="Our Stories"></div>
       </div>
       </div><!--.message-->
 
       <div id="member" name="member" class="member">
-         <h2 class="member_ttl">MEMBER</h2>
-         <div class="member_lists">
-            <a href="parsonal/momo.html" class="member_list"><!--TANAKA MOMOKOさん-->
+         <h2 class="member_ttl fadein">MEMBER</h2>
+         <div class="member_lists scroll-fade-row">
+            <a href="parsonal/momo.html" class="member_list fadein"><!--TANAKA MOMOKOさん-->
                <div class="member_list_parsonal parsonal_01">
                   <div class="name name_01">
                      <div class="name_big">T</div>
@@ -41,13 +41,13 @@
                 </div>
                </div>
                <div class="member_list_comment comment_01">
-                  <h3 class="member_list_comment_ttl">(ΦωΦ)</h3>
+                  <h3 class="member_list_comment_ttl">stoic courage</h3>
                   <div class="member_list_comment_txt">
                      猫LOVE。動きあるWEBデザインを。
                   </div>
                </div>
             </a>
-            <a href="parsonal/hoshi.html" class="member_list"><!--HOSHI YOSUKEさん-->
+            <a href="parsonal/hoshi.html" class="member_list fadein"><!--HOSHI YOSUKEさん-->
                <div class="member_list_parsonal parsonal_02">
                   <div class="name name_02">
                      <div class="name_big">H</div>
@@ -63,7 +63,7 @@
                   </div>
                </div>
             </a>
-            <a href="parsonal/keiko.html" class="member_list"><!--KITAO KEIKOさん-->
+            <a href="parsonal/keiko.html" class="member_list fadein"><!--KITAO KEIKOさん-->
                <div class="member_list_parsonal parsonal_03">
                   <div class="name name_03">
                      <div class="name_big">K</div>
@@ -79,7 +79,7 @@
                   </div>
                </div>
             </a>
-            <a href="parsonal/yoshiyama.html" class="member_list"><!--YOSHIYAMA AKIHIROさん-->
+            <a href="parsonal/yoshiyama.html" class="member_list fadein"><!--YOSHIYAMA AKIHIROさん-->
                <div class="member_list_parsonal parsonal_04">
                   <div class="name name_04">
                      <div class="name_big">Y</div>
@@ -95,7 +95,7 @@
                   </div>
                </div>
             </a>
-            <a href="#" class="member_list"><!--KURIHARA MARIさん-->
+            <a href="#" class="member_list fadein"><!--KURIHARA MARIさん-->
                <div class="member_list_parsonal parsonal_05">
                   <div class="name name_05">
                      <div class="name_big">K</div>
@@ -113,7 +113,7 @@
             </a>
          </div>
       </div><!--.member-->
-      <div id="contact" class="contact">
+      <div id="contact" class="contact fadein">
          <h2 class="contact_ttl">CONTACT</h2>
          <div class="contact_txt">
             If you have something to say or have something to say, please feel free to contact us!<br>
@@ -150,10 +150,22 @@
    </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 <script>
    // transitionの挙動が変なので下記で制御(読み込む前はtransition:0;)
    $(window).on('load',function(){
     $('body').removeClass('hoverRemove');
   });
+  // スクロールでfadeinさせる
+  $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight + 100){
+                $(this).addClass('scrollin');
+            }
+        });
+    });
 </script>
 </html>
