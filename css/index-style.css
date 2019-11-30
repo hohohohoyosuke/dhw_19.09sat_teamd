@@ -296,13 +296,16 @@ main {
 }
 
 .member_list_comment {
-  color: #0F0E0E;
-  border: 1px solid #0F0E0E;
+  color: #808080;
+  border: 1px solid #808080;
   margin-top: 7px;
   padding: 16px 20px;
   font-size: 16px;
   font-weight: bold;
   transition: background-color .5s ease;
+}
+.member_list_comment:hover, .member_list:hover .member_list_comment {
+  color: #0F0E0E;
 }
 
 .member_list_comment_txt {
